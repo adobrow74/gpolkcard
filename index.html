@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aaron Dobrow — Glenn Polk Auto Group</title>
+<link rel="canonical" href="https://gpolk.thedobrowgroup.com/">
+<meta name="description" content="Aaron Dobrow, Vice President of Marketing and Digital Business Operations, Glenn Polk Auto Group.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23184098'/><text x='50' y='70' font-size='52' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>GP</text></svg>">
+<style>
+  :root{
+    --blue:#184098;
+    --red:#E81830;
+    --ink:#15181C;
+    --muted:#6B7075;
+    --paper:#FFFFFF;
+    --wash:#F4F6FA;
+    --hair:#D8DEE9;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:inherit;}
+  body{
+    margin:0;
+    min-height:100%;
+    background:var(--wash);
+    color:var(--ink);
+    font:400 16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:28px 18px;
+  }
+  .card{
+    position:relative;
+    width:100%;
+    max-width:420px;
+    background:var(--paper);
+    padding:40px 26px 34px;
+    text-align:center;
+  }
+  .card::before,.card::after{
+    content:"";
+    position:absolute;
+    width:26px;height:26px;
+    border:2px solid var(--blue);
+  }
+  .card::before{top:0;left:0;border-right:0;border-bottom:0;}
+  .card::after{bottom:0;right:0;border-left:0;border-top:0;}
+  .corner-tr,.corner-bl{position:absolute;width:26px;height:26px;border:2px solid var(--blue);}
+  .corner-tr{top:0;right:0;border-left:0;border-bottom:0;}
+  .corner-bl{bottom:0;left:0;border-right:0;border-top:0;}
+
+  .logo{width:100%;max-width:252px;height:auto;margin:0 auto 26px;display:block;}
+  h1{margin:0;font-size:27px;line-height:1.15;font-weight:700;letter-spacing:-0.4px;}
+  .title{margin:9px auto 0;max-width:280px;font-size:14px;color:var(--muted);line-height:1.45;}
+  .rule{width:46px;height:3px;background:var(--red);margin:20px auto 0;border-radius:2px;}
+
+  .actions{display:flex;flex-direction:column;gap:10px;margin:26px auto 0;max-width:340px;}
+  .btn{
+    display:block;padding:14px 20px;border-radius:9px;
+    border:1px solid var(--hair);background:var(--paper);color:var(--ink);
+    font-size:15px;font-weight:600;text-decoration:none;text-align:center;
+    transition:background .15s ease,transform .05s ease;
+  }
+  .btn:hover{background:var(--wash);}
+  .btn:active{transform:scale(.985);}
+  .btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
+  .btn--primary{background:var(--blue);border-color:var(--blue);color:#fff;}
+  .btn--primary:hover{background:#12317A;}
+
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--hair);}
+  .foot a{color:var(--muted);font-size:14px;text-decoration:none;}
+  .foot a:hover{color:var(--blue);}
+
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ink:#F2F4F7;--muted:#9BA3AD;--paper:#141619;--wash:#0C0D10;--hair:#2A2F36;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#F2F4F7;--muted:#9BA3AD;--paper:#141619;--wash:#0C0D10;--hair:#2A2F36;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <span class="corner-tr"></span><span class="corner-bl"></span>
+
+    <img class="logo" src="./logo.png" alt="Glenn Polk Auto Group">
+
+    <h1>Aaron Dobrow</h1>
+    <p class="title">Vice President of Marketing<br>Digital Business Operations</p>
+    <div class="rule"></div>
+
+    <div class="actions">
+      <a class="btn btn--primary" href="./contact.vcf" download="aaron-dobrow.vcf">Save contact</a>
+      <a class="btn" href="tel:+15409030556">Call (540) 903-0556</a>
+      <a class="btn" href="mailto:aarondobrow@gpolk.com">Email me</a>
+      <a class="btn" href="https://gpolk.com" target="_blank" rel="noopener noreferrer">Visit gpolk.com</a>
+    </div>
+
+    <div class="foot">
+      <a href="https://gpolk.com" target="_blank" rel="noopener noreferrer">gpolk.com</a>
+    </div>
+  </main>
+</body>
+</html>
