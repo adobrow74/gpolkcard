@@ -52,6 +52,7 @@
   .corner-tr{top:0;right:0;border-left:0;border-bottom:0;}
   .corner-bl{bottom:0;left:0;border-right:0;border-top:0;}
 
+  picture{display:block;}
   .logo{width:100%;max-width:252px;height:auto;margin:0 auto 26px;display:block;}
   h1{margin:0;font-size:27px;line-height:1.15;font-weight:700;letter-spacing:-0.4px;}
   .title{margin:9px auto 0;max-width:280px;font-size:14px;color:var(--muted);line-height:1.45;}
@@ -88,7 +89,10 @@
   <main class="card">
     <span class="corner-tr"></span><span class="corner-bl"></span>
 
-    <img class="logo" src="./logo.png" alt="Glenn Polk Auto Group">
+    <picture>
+      <source srcset="./logo-dark.png" media="(prefers-color-scheme: dark)">
+      <img class="logo" src="./logo.png" alt="Glenn Polk Auto Group">
+    </picture>
 
     <h1>Aaron Dobrow</h1>
     <p class="title">Vice President of Marketing<br>Digital Business Operations</p>
